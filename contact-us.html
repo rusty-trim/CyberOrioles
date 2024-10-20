@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 1</title>
+    <meta name="description" content="My first project for my Web Page Design & Development Class">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <main id="root" class="center">
+      <form>
+        <header>
+          <h1>CONTACT US!</h1>
+        </header>
+        <div class="body">
+          <label htmlFor="email">
+            Email:
+            <input autocomplete="email" type="email" id="email" name="email" placeholder="example@example.com" required/>
+          </label>
+
+          <br>
+
+          <label htmlFor="first_name">
+            First Name:
+            <input autocomplete="given-name" id="first_name" name="first_name" placeholder="John" required/>
+          </label>
+
+          <br>
+
+          <label htmlFor="last_name">
+            Last Name:
+            <input autocomplete="family-name" id="last_name" name="last_name" placeholder="Doe" required/>
+          </label>
+
+          <br>
+
+          <textarea name="feedback" placeholder="Provide your feedback here." required></textarea>
+
+          <div class="action">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <nav id="navbar">
+      <span>7202</span>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="competitions.html">Competitions</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <footer id="footer">
+    </footer>
+    <script src="./js/scroll.js"></script>
+  </body>
+</html>

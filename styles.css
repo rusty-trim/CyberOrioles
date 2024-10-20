@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --nav: #FFA500;
+  --main: #1C1C1C;
+  --form: #2F2F2F;
+  --input: #1F1F1F;
+  --font: #FF8C00;
+}
+
+p {
+  transition: all .5s linear;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--font);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--main);
+  padding-top: 64px;
+  padding-bottom: 128px;
+  overflow-y: auto;
+}
+
+main.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 600px;
+  /* height: fit; */
+  background-color: var(--form);
+  border-radius: 0.5rem;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: var(--nav);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+  font-size: 21.3px;
+  font-weight: 700;
+  color: black;
+  user-select: none;
+  opacity: 1.0;
+  transition: opacity 0.5s;
+  z-index: 999;
+}
+
+nav span {
+  margin-left: 25px;
+  font-family: VT323;
+  font-size: 25px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 32px;
+}
+
+nav ul a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  width: fit-content;
+}
+
+nav ul li {
+  position: relative;
+  display:inline-block;
+}
+
+nav ul li::before {
+  transition: 300ms;
+  height: 2.5px;
+  content: "";
+  position: absolute;
+  background-color: #031D44;
+  width: 0%;
+  bottom: 0px;
+}
+
+nav ul li:hover::before {
+ width: 100%;
+}
+
+nav ul {
+  margin-right: 25px;
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--nav);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+  font-size: 21.3px;
+  font-weight: 700;
+  color: black;
+  user-select: none;
+  /* opacity: 0; */
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+section {
+  margin-top: 25px;
+}
+
+section:first-of-type {
+  margin-top: 50px;
+}
+
+section {
+  margin-left: 40px;
+  margin-right: 40px;
+  transition-duration: 500ms;
+}
+
+section:hover {
+  filter: brightness(150%);
+}
+
+section h1 {
+  font-size: 32px;
+}
+
+section p {
+  font-size: 16px;
+}
+
+form header {
+  padding: 2.5rem;
+  font-family: VT323, sans-serif;
+  font-size: 25px;
+}
+
+form div.body {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 2.5rem;
+}
+
+input, textarea, button {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, textarea {
+  background-color: var(--input);
+  resize: none;
+  border: 1px solid transparent;
+  transition-duration: 500ms;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--nav);
+}
+
+form button[type="submit"] {
+  background-color: var(--nav);
+}
+
+form button[type="reset"] {
+  background-color: red;
+}
+
+form div.action {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2.5rem 0px;
+}
+
+*.ml {
+  margin-left: 2.5rem;
+}
+
+summary {
+  display: inline;
+  user-select: none;
+}
+
+/* button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+} */
